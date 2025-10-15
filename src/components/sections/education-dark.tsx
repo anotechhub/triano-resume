@@ -50,30 +50,30 @@ export function EducationDark() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <p className="text-white/60 text-sm mb-3">Education & Certifications</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               Academic & Professional
               <br />
               <span className="text-lime">Credentials</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Education */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-dark-card border border-white/10 rounded-3xl p-8 hover:border-lime/30 transition-all"
+              className="bg-dark-card border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 hover:border-lime/30 transition-all"
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-lime/10 flex items-center justify-center">
-                  <GraduationCap className="w-8 h-8 text-lime" />
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-lime/10 flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="w-7 h-7 sm:w-8 sm:h-8 text-lime" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{education.degree}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">{education.degree}</h3>
                   <p className="text-white/60 text-sm">{education.period}</p>
                 </div>
               </div>
@@ -109,13 +109,13 @@ export function EducationDark() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-dark-card border border-white/10 rounded-3xl p-8 hover:border-lime/30 transition-all"
+              className="bg-dark-card border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 hover:border-lime/30 transition-all"
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-lime/10 flex items-center justify-center">
-                  <Award className="w-8 h-8 text-lime" />
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-lime/10 flex items-center justify-center flex-shrink-0">
+                  <Award className="w-7 h-7 sm:w-8 sm:h-8 text-lime" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Certifications</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Certifications</h3>
               </div>
 
               <div className="space-y-4">

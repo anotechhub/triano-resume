@@ -90,15 +90,15 @@ function ProjectCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       whileHover={{ x: 8 }}
-      className="group relative bg-dark-card border border-white/10 rounded-2xl p-6 hover:border-lime/30 transition-all"
+      className="group relative bg-dark-card border border-white/10 rounded-2xl p-4 sm:p-5 md:p-6 hover:border-lime/30 transition-all"
     >
       {/* Left accent bar */}
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-lime/0 group-hover:bg-lime transition-all rounded-l-2xl" />
 
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-3 sm:gap-4">
         {/* Number badge */}
-        <div className="flex-shrink-0 w-10 h-10 rounded-full bg-lime/10 flex items-center justify-center border border-lime/20 group-hover:bg-lime/20 transition-all">
-          <span className="text-lime font-bold text-sm">{String(index + 1).padStart(2, '0')}</span>
+        <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-lime/10 flex items-center justify-center border border-lime/20 group-hover:bg-lime/20 transition-all">
+          <span className="text-lime font-bold text-xs sm:text-sm">{String(index + 1).padStart(2, '0')}</span>
         </div>
 
         {/* Content */}
@@ -106,10 +106,10 @@ function ProjectCard({
           {/* Header */}
           <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
             <div className="flex-1 min-w-0">
-              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-lime transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-lime transition-colors">
                 {title}
               </h3>
-              <p className="text-white/60 text-sm font-medium">{company}</p>
+              <p className="text-white/60 text-xs sm:text-sm font-medium">{company}</p>
             </div>
             <span className="text-white/40 text-xs font-medium whitespace-nowrap mt-1">
               {period}
@@ -156,10 +156,10 @@ export function ProjectsDark() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-12 sm:mb-16"
         >
           <p className="text-white/60 text-sm mb-3">Latest Works</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Explore My Popular
             <br />
             <span className="text-lime">Projects</span>
@@ -167,7 +167,7 @@ export function ProjectsDark() {
         </motion.div>
 
         {/* Projects Grid - 2 Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {visibleProjects.map((project, index) => (
             <ProjectCard key={project.title} {...project} index={index} />
           ))}

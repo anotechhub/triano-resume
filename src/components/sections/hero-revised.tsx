@@ -78,7 +78,7 @@ export function HeroRevised() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl md:text-7xl font-bold text-text mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-text mb-4 leading-tight">
                 Triano Nurhikmat
               </h1>
             </motion.div>
@@ -88,7 +88,7 @@ export function HeroRevised() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-2xl md:text-3xl text-primary font-semibold mb-6"
+              className="text-xl sm:text-2xl md:text-3xl text-primary font-semibold mb-6"
             >
               AI & Data Engineer
             </motion.p>
@@ -98,7 +98,7 @@ export function HeroRevised() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-lg md:text-xl text-muted mb-8 leading-relaxed"
+              className="text-base sm:text-lg md:text-xl text-muted mb-8 leading-relaxed"
             >
               Building & shipping production-ready data/AI systems on GCP (Vertex AI, BigQuery) and AWS with MLOps best practices. Specialized in GenAI (Gemini) and scalable data infrastructure.
             </motion.p>
@@ -140,7 +140,7 @@ export function HeroRevised() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
-                  className="flex items-center gap-4 bg-dark-card border border-white/10 rounded-2xl p-4 flex-1 min-w-[200px] max-w-[280px] hover:border-lime/30 transition-all"
+                  className="flex items-center gap-3 sm:gap-4 bg-dark-card border border-white/10 rounded-2xl p-3 sm:p-4 flex-1 min-w-full sm:min-w-[200px] max-w-full sm:max-w-[280px] hover:border-lime/30 transition-all"
                 >
                   <div className="w-12 h-12 rounded-full bg-lime/10 flex items-center justify-center flex-shrink-0">
                     {contact.icon && <contact.icon className="w-5 h-5 text-lime" />}
