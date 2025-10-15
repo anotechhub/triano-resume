@@ -180,7 +180,7 @@ export function ProjectsDark() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-12 mb-20 text-center"
+            className="mt-12 mb-1 text-center"
           >
             <button
               onClick={() => setShowAll(!showAll)}
