@@ -1,0 +1,12 @@
+# Testing
+src/__tests__
+*.test.ts
+*.test.tsx
+vitest.config.ts
+
+# Development
+*.md
+!README.md
+
+# Local env files
+.env*.local
