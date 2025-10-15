@@ -73,11 +73,10 @@ export function ExperienceDark() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <p className="text-white/60 text-sm mb-3">My Resume</p>
+          <p className="text-white/60 text-sm mb-3">My Journey</p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Real <span className="text-lime">Problem Solutions</span>
-            <br />
-            Experience
+            Professional <span className="text-lime">Experience</span> &<br />
+            Career Growth
           </h2>
         </motion.div>
 

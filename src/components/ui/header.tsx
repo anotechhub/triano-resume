@@ -8,7 +8,7 @@ import { Button } from "./button";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Resume", href: "#experience" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#tech-stack" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
