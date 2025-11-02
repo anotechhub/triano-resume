@@ -54,7 +54,7 @@ export function HeroDark() {
                 size="lg"
                 className="bg-lime text-dark hover:bg-lime/90 font-semibold rounded-full px-8"
               >
-                <a href="mailto:anno.tri@gmail.com" className="inline-flex items-center gap-2">
+                <a href="mailto:trianonurhikmat03@gmail.com" className="inline-flex items-center gap-2">
                   Hire Me <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
@@ -141,11 +141,11 @@ export function HeroDark() {
             <span className="text-sm text-white/70">+62 813-2506-3397</span>
           </a>
           <a
-            href="mailto:anno.tri@gmail.com"
+            href="mailto:trianonurhikmat03@gmail.com"
             className="flex items-center gap-3 px-5 py-3 rounded-full bg-dark-card border border-white/10 hover:border-lime/50 transition-all"
           >
             <Mail className="w-4 h-4 text-lime" />
-            <span className="text-sm text-white/70">anno.tri@gmail.com</span>
+            <span className="text-sm text-white/70">trianonurhikmat03@gmail.com</span>
           </a>
           <a
             href="https://www.linkedin.com/in/trianonurhikmat/"
