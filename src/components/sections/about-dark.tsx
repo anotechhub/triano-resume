@@ -29,7 +29,7 @@ export function AboutDark() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -78,7 +78,7 @@ export function AboutDark() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative max-w-sm mx-auto"
+            className="relative max-w-md lg:max-w-lg mx-auto"
           >
             <div className="relative">
               {/* Decorative element */}
@@ -91,8 +91,8 @@ export function AboutDark() {
                   <Image
                     src="/about-image.png"
                     alt="About Triano Nurhikmat"
-                    width={400}
-                    height={533}
+                    width={500}
+                    height={667}
                     className="w-full h-auto object-cover"
                     priority
                   />

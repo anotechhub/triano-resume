@@ -18,6 +18,20 @@ interface ProjectCardProps {
 
 const projects = [
   {
+    title: "Dashboard, AI Agent for Financial Reporting (Finex)",
+    company: "Finex",
+    period: "July - Sept 2025",
+    description: "Developed a data warehouse and an AI agent to automate financial reporting via Looker Dashboards and standardize regulatory reports. Leveraged Generative AI to automate information extraction from PDFs, enabling the AI agent to seamlessly analyze data on demand.",
+    tools: ["Vertex AI", "Gemini", "Cloud Run", "Looker", "Python"],
+  },
+  {
+    title: "Reputation Analysis with AI",
+    company: "Otoritas Jasa Keuangan",
+    period: "Dec 2024 - May 2025",
+    description: "Lead a team to develop a backend agent for sentiment analysis to monitor every PUJK (Pelaku Usaha Jasa Keuangan) about their own reputation based on tweet and information mentioned on social media or media informasi. Built a complementary solution for OJK's team to assess and audit every PUJK public reputation across X, Instagram, Facebook, TikTok, and multimedia information.",
+    tools: ["Vertex AI", "Gemini", "Cloud SQL", "Cloud Run", "Python"],
+  },
+  {
     title: "Social Media Monitoring with AI",
     company: "Otoritas Jasa Keuangan",
     period: "Jan - Aug 2024",
